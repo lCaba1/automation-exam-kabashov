@@ -15,6 +15,8 @@ class Tariff(TariffBase):
 
 
 class DeliveryBase(BaseModel):
+    id: int
+    phone: str
     delivery_time: datetime
     car_number: str
     courier: str
